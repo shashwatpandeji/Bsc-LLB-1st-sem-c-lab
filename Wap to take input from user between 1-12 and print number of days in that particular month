@@ -2,7 +2,7 @@
 void main()
 {
     int n;
-    printf("enter a number b/w 1-12: \n");
+    printf("Enter a number b/w 1-12 : \n");
     scanf("%d", &n);
 
     switch(n)
