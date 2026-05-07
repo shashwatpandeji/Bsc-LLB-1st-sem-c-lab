@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class student {
+public:
+    static int total_students;
+
+    student() {
+        total_students++;
+    }
+};
+
+int student::total_students = 0;
+
+int main() {
+    student s1, s2, s3;
+    cout << student::total_students;
+    return 0;
+}
