@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+
+class Factorial {
+private:
+    int num;
+    long long fact;
+
+public:
+  
+    void getData() {
+        cout << "Enter a number: ";
+        cin >> num;
+    }
+
+ 
+    void calculate() {
+        fact = 1;
+
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+    }
+
+
+    void display() {
+        cout << "Factorial of " << num << " is " << fact << endl;
+    }
+};
+
+int main() {
+    
+    Factorial obj;
+
+    
+    obj.getData();
+    obj.calculate();
+    obj.display();
+
+    return 0;
+}
